@@ -1,0 +1,363 @@
+/*
+------------------------------------------------
+2.1 Fonts Variable
+------------------------------------------------
+*/
+
+// Font Family Variable
+$kn-font: 'Mcit-kn-font', sans-serif;
+
+/*
+------------------------------------------------
+2.1 Font Weight
+------------------------------------------------
+*/
+.knhb-fw200 {
+  font-weight: 200 !important;
+}
+
+.knhb-fw400 {
+  font-weight: 400 !important;
+}
+
+.knhb-fw500 {
+  font-weight: 500 !important;
+}
+
+.knhb-fw700 {
+  font-weight: 700 !important;
+}
+
+.knhb-fw900 {
+  font-weight: 900 !important;
+}
+
+/*
+------------------------------------------------
+2.2 Font Size
+------------------------------------------------
+*/
+.knhb-fs-xxs {
+  font-size: 0.625rem;
+}
+
+.knhb-fs-xs {
+  font-size: 0.75rem;
+}
+
+.knhb-fs-sm {
+  font-size: 0.875rem;
+}
+
+.knhb-fs-rg {
+  font-size: 1rem;
+}
+
+.knhb-fs-lg {
+  font-size: 1.25rem;
+}
+
+.knhb-fs-xl {
+  font-size: 1.875rem;
+}
+
+.knhb-fs-xxl {
+  font-size: 2.5rem;
+}
+
+/* ------------------------------------------------
+                   Genral Css
+ ------------------------------------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+button,
+input[type='submit'] {
+  cursor: pointer;
+}
+
+:focus,
+button:focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+input,
+textarea,
+select {
+  padding-inline: 1rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+a {
+  color: $mainColor;
+  text-transform: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+a:hover,
+a :focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+a:focus {
+  outline: 0 solid;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: $kn-font;
+  color: $darkColor;
+  line-height: 1.75rem;
+  font-weight: 400;
+  background-color: $bodyBgColor;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url('../../../public/img/down-arrow.svg');
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: calc(100% - 1rem) 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  margin-block-end: 2rem;
+
+  &.knhb-mb-0 {
+    margin-block-end: 0;
+  }
+
+  span {
+    font-weight: 400;
+  }
+}
+
+/* buttons */
+
+.knbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  line-height: 1;
+  color: $mainColor;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding-inline: 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: 2.5rem;
+  white-space: nowrap;
+
+  &.knbtn-sm {
+    height: 2.5rem;
+    padding-inline: 1rem;
+    font-size: 0.8rem;
+    border-radius: 0.375rem;
+  }
+
+  &.knbtn-lg {
+    height: 3rem;
+    padding-inline: 1.5rem;
+  }
+
+  &.knbtn-xl {
+    height: 4.125rem;
+    padding-inline: 3rem;
+  }
+
+  &.knbtn-main {
+    background-color: $mainColor;
+    color: $whiteColor;
+
+    &:hover {
+      background-color: $mainColorHover;
+    }
+
+    &.knbtn-ouline {
+      border-color: $mainColor;
+      background-color: $whiteColor;
+      color: $mainColor;
+
+      &:hover {
+        background-color: $mainColor;
+        color: #fff;
+      }
+    }
+  }
+
+  &.knbtn-dark {
+    background-color: $darkColor;
+    color: $whiteColor;
+
+    &:hover {
+      background-color: $blackColor;
+    }
+
+    &.knbtn-outline {
+      background-color: transparent;
+      color: $darkColor;
+      border-color: $darkColor;
+
+      &:hover {
+        background-color: $darkColor;
+        color: $whiteColor;
+      }
+    }
+  }
+
+  &.knbtn-gray {
+    background-color: $grayColor;
+    color: $whiteColor;
+
+    &:hover {
+      background-color: $darkColor;
+    }
+  }
+
+  &.knbtn-light {
+    background-color: $lightColor;
+    color: $darkColor;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.knbtn + .knbtn {
+  margin-inline-start: 1rem;
+}
+
+.knhb-card {
+  background-color: $whiteColor;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.25rem 1.25rem $shadowColor;
+  padding: 1rem;
+  min-height: 10rem;
+
+  .knhb-card-head {
+    color: $darkColor;
+  }
+}
+
+.knhb-title {
+  position: relative;
+  padding-bottom: 20px;
+
+  h5 {
+    font-size: 1.1rem;
+    margin: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 50px;
+      background: $mainColor;
+    }
+  }
+
+  &.title-sub {
+    h5 {
+      &::after {
+        background: $lightGrayColor;
+      }
+    }
+  }
+}
+
+.page-header {
+  background-image: url('../../../public/img/srch-box-bg.png');
+  border-radius: 10px;
+  color: #fff;
+}
+
+.ant-breadcrumb {
+  ol {
+    padding: 0;
+  }
+
+  .ant-breadcrumb-link {
+    color: $whiteColor;
+
+    a {
+      color: $mainColor;
+    }
+  }
+
+  .ant-breadcrumb-separator {
+    color: $whiteColor;
+  }
+}
+
+.ant-select-selector {
+  height: 45px !important;
+  border-radius: 4px !important;
+
+  .ant-select-selection-placeholder {
+    line-height: 36px !important;
+  }
+}
+
+.ant-tag-checkable {
+  border-color: #eee !important;
+}
+.ant-pagination {
+  direction: rtl;
+}
+
+// .ant-modal-root .ant-modal-mask {
+//   z-index: 100022 !important;
+// }
+// .ant-modal-root .ant-modal-wrap {
+//   z-index: 1000222 !important;
+// }
+// 1.1.2 Dark Theme Colors

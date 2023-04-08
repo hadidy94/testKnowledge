@@ -1,0 +1,286 @@
+/* stylelint-disable */
+aside.knhb-side-nav-wp {
+  position: fixed;
+  inset: 4rem 0 0 auto;
+  background-color: $whiteColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 4rem;
+  box-shadow: -10px 0px 1.25rem $shadowColor;
+  z-index: 400;
+  transition: all 0.4s ease-out;
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 3rem;
+    width: 4rem;
+    justify-content: center;
+    span {
+      font-size: 0;
+      opacity: 0;
+      width: 0;
+      white-space: nowrap;
+      transition: all 0.4s ease-out;
+    }
+    i {
+      width: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
+  }
+  &.knhb-side-expand {
+    a {
+      width: 100%;
+      justify-content: flex-start;
+      span {
+        font-size: 16px;
+        opacity: 1;
+        width: auto;
+      }
+    }
+  }
+  nav.knhb-side-nav {
+    list-style: none;
+    padding: 0.75rem;
+
+    li {
+      a {
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 0.625rem;
+        margin: 0.5rem 0;
+        color: $darkColor;
+        &.knhb-active,
+        &:not(.knhb-active):hover {
+          background-color: $mainColor10;
+          color: $mainColor;
+        }
+
+        &:not(.knhb-active):hover {
+          background-color: $shadowColor;
+        }
+      }
+    }
+  }
+  > a {
+    background-color: $mainColor;
+    color: $whiteColor;
+    &:hover {
+      background-color: $darkColor;
+    }
+  }
+  &.knhb-side-expand {
+    width: 14rem;
+    nav.knhb-side-nav {
+      a {
+        width: 100%;
+        justify-content: flex-start;
+        span {
+          font-size: 16px;
+          opacity: 1;
+          width: auto;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+aside.knhb-profile-bar-wp {
+  position: fixed;
+  inset: 4rem auto 0 0;
+  background-color: $whiteColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 4rem;
+  box-shadow: 10px 0px 1.25rem $shadowColor;
+  z-index: 400;
+  transition: all 0.4s ease-out;
+  nav {
+    list-style: none;
+    padding: 0.75rem;
+    > li {
+      position: relative;
+      > a {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 0.625rem;
+        margin: 0.5rem 0;
+        color: $darkColor;
+        justify-content: center;
+        position: relative;
+        &:hover {
+          background-color: $mainColor10;
+          color: $mainColor;
+        }
+        span.knhb-top-badge {
+          background-color: $dangerColor;
+          padding: 0.175rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0.375rem;
+          right: 0.375rem;
+          border: 2px solid $whiteColor;
+
+          &.knhb-number-badge {
+            font-size: 0.75rem;
+            color: $whiteColor;
+            padding: 0.188rem 0.188rem 0.125rem;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 0.5rem;
+            top: -0.25rem;
+            right: -0.25rem;
+            min-width: 1.313rem;
+          }
+        }
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.25rem;
+        }
+        img {
+          width: 1.25rem;
+          &.knhb-dark-theme {
+            display: none;
+          }
+        }
+
+        &.knhb-theme-switch {
+          img {
+            &.knhb-dark-theme {
+              display: flex;
+            }
+            &.knhb-light-theme {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .knhb-noti-wp {
+        border-radius: 0.5rem;
+        box-shadow: 0px 1.25rem 1.25rem $darkColor25;
+        position: absolute;
+        left: -70rem #{"/* rtl:ignore */"};
+        background: $whiteColor;
+        min-width: 22rem;
+        list-style: none;
+        padding: 0;
+        overflow: hidden;
+        z-index: 90;
+        top: -0.5rem;
+        transition:all 0.4s linear;
+        &.ppp-active {
+          left: 3rem;
+        }
+
+        li + li {
+          border-top: 1px solid $lightColor;
+        }
+        li {
+          padding: 1rem;
+          &.knhb-unread {
+            background-color: $mainColor10;
+          }
+          .knhb-noti {
+            color: $darkColor;
+            height: fit-content;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            .knhb-noti-icon {
+              min-width: 2.5rem;
+              min-height: 2.5rem;
+              border-radius: 0.5rem;
+              margin-inline-end: 0.75rem;
+              background: $shadowColor;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: $darkColor;
+              
+            }
+            p {
+              color: $darkColor;
+              margin-bottom: 0.125rem;
+              font-size: 0.75rem;
+            }
+          }
+          .knhb-noti-btns {
+            padding-inline-start: 3rem;
+          }
+        }
+      }
+      .knhb-noti-wp.active {
+        left: 3.5rem #{"/* rtl:ignore */"};
+      }
+      .knhb-clndr-ppp-wp {
+        border-radius: 0.5rem;
+        box-shadow: 0px 1.25rem 1.25rem $darkColor25;
+        position: absolute;
+        left: -70rem #{"/* rtl:ignore */"};
+        background: $whiteColor;
+        min-width: 22rem;
+        list-style: none;
+        padding: 0;
+        overflow: hidden;
+        z-index: 90;
+        top: -0.5rem;
+        transition:all 0.4s linear;
+       
+        &.ppp-active {
+          left: 3rem;
+        }
+        .knhb-clndr-ppp-i  {
+          border-top: 1px solid $lightColor;
+          padding: 1rem;
+          .knhb-clndr-ppp-dt {
+            width: 4rem;
+            height: 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: $lightColor;
+            border-radius: 0.5rem;
+            margin-inline-end: 0.5rem;            
+          }
+          .knhb-clndr-ppp-dtls {
+            flex: 0 0 calc(100% - 4.5rem);
+            > p {
+              margin-block: 0.5rem;
+              font-weight: 500;
+              color: $blackColor;
+            }
+            div + div {
+              margin-inline-start: auto;
+            }
+            i.knb {
+              margin-inline-end: 0.25rem;
+            }
+          }
+          .knhb-clndr-ppp-btn {
+            flex: 0 0 100%;
+          }
+        }
+      }
+      .knhb-clndr-ppp-wp.active {
+        left: 3.5rem #{"/* rtl:ignore */"};
+      }
+    }
+  }
+}
+/* stylelint-enable */

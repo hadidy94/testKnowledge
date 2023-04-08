@@ -1,0 +1,98 @@
+
+/*
+------------------------------------------------
+ Main Page Search & Facts
+------------------------------------------------
+*/
+
+.knhb-index-header {
+    padding: 0;
+    background-color: $whiteColor;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.25rem 1.25rem $shadowColor;
+    margin-block-end:  1.75rem;
+  
+  .knhb-srch-box {
+    background: url("../../../public/img/srch-box-bg.png") no-repeat center;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    min-height: 12rem;
+
+    form {
+      background-color: #ffffff52;
+      padding: 0;
+      height: 3.25rem;
+      display: flex;
+      border-radius: 0.5rem; 
+
+      input {
+        border: 0;
+        outline: 0;
+        height: 3.25rem;
+        line-height: 3.25rem;
+        padding: 0 1rem;
+        background-color: transparent;
+        width: 40vw;
+        color: $whiteColor;
+
+        &::placeholder {
+          color: $whiteColor;
+          line-height: 3.25rem;
+        }
+      }
+
+      .kntn {
+        height: 3rem;
+      }
+    }
+  }
+
+  .knhb-main-facts-wp {
+    .knhb-main-facts-c {
+      width: calc(50% - 5rem);
+      padding: 2rem;
+
+      h3 {
+        color: $mainColor;
+        font-size: 1.875rem;
+      }
+
+      > span {
+        color: $grayColor;
+        font-weight: 400;
+        font-size: 0.875rem;
+      }
+    }
+
+    .knhb-main-logo {
+      width: 8rem;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-block-start: -4rem;
+      background-color: $whiteColor;
+      box-shadow: 0 2rem 3rem $mainColor10;
+      padding: 1rem;
+
+      img {
+        max-width: 5rem;
+        max-height: 5rem;
+      }
+
+        svg {
+          max-width: 5rem;
+          max-height: 5rem;
+
+          path {
+          fill: $darkColor;
+        }
+      }
+    }
+  }
+}

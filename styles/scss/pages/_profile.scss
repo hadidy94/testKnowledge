@@ -1,0 +1,173 @@
+.knhb-get-materials-tabs {
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        color: $grayColor;
+        border: none;
+        position: relative;
+        background-color: transparent;
+        padding: 0 5px 10px;
+        margin: 0 10px;
+
+        span {
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: none;
+            color: $blackColor;
+        }
+
+        &:hover {
+            color: $mainColor;
+        }
+
+        &+button::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 1px;
+            height: 30px;
+            background: $lightGrayColor;
+            border-radius: 1px;
+        }
+
+        &.active {
+            border-bottom: 2px solid $mainColor;
+            margin-bottom: 0;
+
+            span {
+                display: block;
+                margin-inline-start: 5px;
+            }
+
+            &+button::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.knhb-profile-header {
+    .knhb-profile-header-img {
+        background: url("../../../public/img/srch-box-bg.png") no-repeat center;
+        border-radius: 0.5rem 0.5rem 0 0;
+        padding: 0 3rem  3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25vh;
+        min-height: 12rem;
+    }
+
+    .knhb-profile-header-user {
+        margin-top: -45px;
+    }
+
+    .knhb-profile-header-stastics {
+        li {
+            position: relative;
+
+            &+li::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 1px;
+                height: 30px;
+                background: $lightGrayColor;
+            }
+        }
+    }
+
+    .knhb-profile-header-tabs {
+        .nav-link {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0;
+            color: $grayColor;
+            border: none;
+            position: relative;
+            min-width: 115px;
+
+            span {
+                margin-top: 0.3rem;
+                font-size: 0.9rem;
+                display: none;
+            }
+
+            &:hover {
+                color: $mainColor;
+            }
+
+            &+button::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 1px;
+                height: 30px;
+                background: $lightGrayColor;
+                border-radius: 1px;
+            }
+
+            &.active {
+                border: none;
+                background-color: $mainColor;
+                color: $whiteColor;
+                margin-bottom: 0;
+
+                span {
+                    display: block;
+                }
+
+                &+button::after {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+
+.edu-steps {
+    .step-img {
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &::before {
+            background-color: currentcolor;
+            color: var(--bs-border-color) !important;;
+            content: "";
+            display: block;
+            width: 1px;
+            position: absolute;
+            bottom: 0;
+            transform: translate(32%, 100%);
+            height: 49px;
+            left: 50%;
+        }
+    }
+
+    li:last-child {
+        .step-img {
+            &::before {
+                display: none;
+            }
+        } 
+    }
+}

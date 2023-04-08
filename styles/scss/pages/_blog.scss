@@ -1,0 +1,39 @@
+.blog-box {
+    box-shadow: 0px 20px 20px #003CFF0A;
+    border-radius: 8px;
+    position: relative;
+
+    .blog-img {
+        img{
+            min-height: 238px;
+            max-height: 238px;
+        }
+    }
+    
+    .blog-tag {
+        position: absolute;
+        display: flex;
+        border: 1px solid $white;
+        color: $white;
+        top: 10px;
+        left: 10px;
+        padding: 5px;
+        border-radius: 5px;
+
+        i {
+            font-size: 1rem;
+        }
+
+        span {
+            font-size: 0.8rem
+        }
+    }
+
+    .blog-trim {
+        min-height: 90px;
+    }
+
+    i {
+        font-size: 1.2rem;
+    }
+}

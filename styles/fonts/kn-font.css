@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: Mcit-kn-font;
+    src: url("../../public/fonts/kn-font/Alexandria-Black.woff2") format("woff2"),
+        url("../../public/fonts/kn-font/Alexandria-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Mcit-kn-font;
+    src: url("../../public/fonts/kn-font/Alexandria-Bold.woff2") format("woff2"),
+        url("../../public/fonts/kn-font/Alexandria-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Mcit-kn-font;
+    src: url("../../public/fonts/kn-font/Alexandria-Medium.woff2") format("woff2"),
+        url("../../public/fonts/kn-font/Alexandria-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Mcit-kn-font;
+    src: url("../../public/fonts/kn-font/Alexandria-Regular.woff2") format("woff2"),
+        url("../../public/fonts/kn-font/Alexandria-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Mcit-kn-font;
+    src: url("../../public/fonts/kn-font/Alexandria-ExtraLight.woff2") format("woff2"),
+        url("../../public/fonts/kn-font/Alexandria-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+

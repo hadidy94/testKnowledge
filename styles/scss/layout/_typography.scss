@@ -1,0 +1,124 @@
+/*
+------------------------------------------------
+1.2 Colors Theme CSS Classes
+------------------------------------------------
+*/
+.text-main {
+    color: $mainColor;
+}
+
+.main-bg {
+    background-color: $mainColor;
+}
+
+.main-br {
+    border-color: $mainColor;
+}
+
+.alt-color {
+    color: $altColor;
+}
+
+.alt-bg {
+    background-color: $altColor;
+}
+
+.alt-br {
+    border-color: $altColor;
+}
+
+.text-dark {
+    color: $darkColor;
+}
+
+.dark-bg {
+    background-color: $darkColor;
+}
+
+.dark-br {
+    border-color: $darkColor;
+}
+
+.text-gray {
+    color: $grayColor;
+}
+
+.text-light-gray {
+    color: $lightGrayColor;
+}
+
+.gray-bg {
+    background-color: $grayColor;
+}
+
+.gray-br {
+    border-color: $grayColor;
+}
+
+.white-color {
+    color: $whiteColor;
+}
+
+.white-bg {
+    background-color: $whiteColor;
+}
+
+.white-br {
+    border-color: $whiteColor;
+}
+
+.text-success {
+    color: $successColor;
+}
+
+.success-bg {
+    background-color: $successColor;
+}
+
+.success-br {
+    border-color: $successColor;
+}
+
+.text-info {
+    color: $infoColor;
+}
+
+.info-bg {
+    background-color: $infoColor;
+}
+
+.info-br {
+    border-color: $infoColor;
+}
+
+.text-danger {
+    color: $dangerColor;
+}
+
+.danger-bg {
+    background-color: $dangerColor;
+}
+
+.danger-br {
+    border-color: $dangerColor;
+}
+
+.text-warning {
+    color: $warningColor;
+}
+
+.warning-bg {
+    background-color: $warningColor;
+}
+
+.warning-br {
+    border-color: $warningColor;
+}
+
+.text-black {
+    color: $blackColor;
+}
+
+.knhb-shadow {
+    box-shadow: 0 1.25rem 1.25rem rgb(0 60 255 / 3.9%);
+}

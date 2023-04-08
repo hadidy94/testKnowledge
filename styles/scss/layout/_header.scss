@@ -1,0 +1,118 @@
+
+/* ------------------------------------------------
+              Header Css
+------------------------------------------------ */
+.knhb-top-header-wp {
+  background-color: $blackColor;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 500;
+
+  .knhb-profile-img {
+    a {
+      background-color:$whiteColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
+
+      img {
+        width: 2.4rem;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .knhb-side-nav-icon {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
+      color: $whiteColor;
+      background-color: $mainColor;
+      text-decoration: none;
+
+      i.knr.kn-arrow-right {
+        display: none;
+      }
+
+      &:hover,
+      &.knhb-a-expand {
+        background-color: $warningColor;
+      }
+
+      &.knhb-a-expand {
+        i.knr.kn-arrow-right {
+            display: block;
+          }
+
+          i.knr.kn-menu {
+            display: none;
+          }
+    
+      }
+      
+      img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .container {
+    .knhb-logo-name {
+      h4 {
+        color: $whiteColor;
+        font-size: 1.125rem;
+        line-height: 4rem;
+      }
+    }
+
+    .knhb-heder-nav {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      margin: 0;
+
+      li {
+        &:not(.knhb-heder-btn) {
+          a {
+            display: flex;
+            align-items: center;
+            padding-inline: 1rem;
+            height: 2.5rem;
+            color: $whiteColor;
+            border-radius: 0.5rem;
+
+            i {
+              color: $altColor;
+              margin-inline-end: 10px;
+            }
+
+            &:hover {
+              color: $altColor;
+              background-color: $darkColor;
+            }
+
+            &:hover i {
+              color: $whiteColor;
+            }
+          }
+        }
+
+        &.knhb-heder-btn {
+          margin-inline-start: 30px;
+        }
+      }
+    }
+  }
+}

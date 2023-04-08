@@ -1,0 +1,84 @@
+/* --------------------------------------------------------------
+Preloader
+---------------------------------------------------------------- */
+.knhb-preloader-wp {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $bodyBgColor;
+
+    .knhb-preloader-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            width: 100vw;
+    height: 100vh;
+
+   .knhb-preloader-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    padding: 1rem;
+    border-width: 0.188rem;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: $shadowColor;
+
+    &::after {
+    content: "";
+    border-width: 0.188rem;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: $mainColor;
+    border-radius: 50%;
+    position: absolute;
+    width: calc(100% + 0.375rem);
+    height: calc(100% + 0.375rem);
+    left: 50%;
+    top: 50%;
+    animation: spin 1s ease-in-out infinite;
+    margin-left: -3rem;
+    margin-top: -3rem;
+    }
+
+    svg {
+        height: 4rem;
+
+        path {
+            fill:  $mainColor;
+        }
+    }
+}
+}
+}
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
